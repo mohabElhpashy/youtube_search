@@ -1,0 +1,103 @@
+.mainHeader {
+  width: 100%;
+  height: 5rem;
+  background-color: red;
+  display: flex;
+  align-items: center;
+}
+.header_Items {
+  width: 70%;
+  //   background-color: white;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Youtube {
+  background-color: red;
+  display: flex;
+  align-items: center;
+
+  svg {
+    color: white;
+  }
+}
+
+.Youtube span {
+  display: none;
+  font-weight: 700;
+  text-indent: 5px;
+  font-size: large;
+}
+
+.Search {
+  width: 60%;
+  /* background-color: red; */
+  height: 2rem;
+  display: flex;
+}
+.Search input {
+  height: 30px;
+
+  width: 91%;
+}
+input::placeholder {
+  color: #222;
+  transition: color 0.3s ease;
+}
+.Search input:focus {
+  outline: #1d50e1;
+  border: 1px solid #1d50e1;
+}
+.Search button {
+  height: 35px;
+  width: 43px;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+  outline: none;
+
+  svg {
+    color: white;
+  }
+}
+.Search button:hover {
+  background-color: gainsboro;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mainHeader {
+    background-color: white;
+    border: 1px solid #fff;
+    box-shadow: 4px 4px 4px #fff;
+    position: fixed;
+  }
+
+  .Youtube {
+    background-color: white;
+
+    svg {
+      color: red;
+    }
+  }
+
+  .Youtube span {
+    display: block;
+  }
+
+  .header_Items {
+    background-color: white;
+  }
+
+  .Search button {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 0;
+    background-color: white;
+
+    svg {
+      color: #000;
+    }
+  }
+}
